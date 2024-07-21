@@ -10,7 +10,11 @@ exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
 let AppService = class AppService {
     getHello() {
-        return 'Hello World!';
+        let output = 'counting numbers';
+        for (let index = 0; index < 10; index++) {
+            output += "</br>" + index;
+        }
+        return output;
     }
 };
 exports.AppService = AppService;
